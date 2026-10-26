@@ -1,0 +1,14 @@
+{
+  "$schema": "./node_modules/@angular/cli/lib/config/schema.json",
+  "version": 1,
+  "newProjectRoot": "projects",
+  "projects": {"sports-academy": {"projectType":"application","root":"","sourceRoot":"src","prefix":"app","architect":{
+    "build":{"builder":"@angular-devkit/build-angular:application","options":{"outputPath":"dist/sports-academy","index":"src/index.html","browser":"src/main.ts","polyfills":["zone.js"],"tsConfig":"tsconfig.app.json","styles":["src/styles.css"]},"configurations":{"production":{"optimization":true,"outputHashing":"all"},"development":{"optimization":false,"sourceMap":true}},"defaultConfiguration":"production"},
+    "serve":{"builder":"@angular-devkit/build-angular:dev-server","configurations":{"production":{"buildTarget":"sports-academy:build:production"},"development":{"buildTarget":"sports-academy:build:development"}},"defaultConfiguration":"development"}
+  }
+}
+},
+"cli": {
+"analytics": "ccb4b408-6da1-482d-bfb8-51250ac6bf38"
+}
+}
